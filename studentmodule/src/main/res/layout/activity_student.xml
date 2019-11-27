@@ -8,6 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="主项目-跳转到-院校模块" />
+        android:text="学生模块-跳转到-院校模块" />
 
 </LinearLayout>

@@ -1,1 +1,1 @@
-include ':app', ':routerapilib'
+include ':app', ':routerapilib', ':schoolmodule', ':studentmodule'

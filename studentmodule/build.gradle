@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     /**默认-选项配置*/
     defaultConfig {
-        applicationId rootProject.ext.applicationId
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
@@ -21,7 +20,7 @@ android {
         }
         release {
             //混淆
-            minifyEnabled true
+            minifyEnabled false
             //混淆文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -31,18 +30,20 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
+    /**自定义aar的名字*/
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = outputFileName.replace(".aar", "-") + rootProject.ext.versionCode + ".aar"
+        }
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     /**support*/
-    compile "com.android.support.constraint:constraint-layout:$rootProject.constraintLayout"
     compile "com.android.support:appcompat-v7:$rootProject.supportVersion"
     /**路由*/
     compile 'com.github.Lvluffy:GeneralRouterApi:1.0.4'
     compile 'com.github.Lvluffy:GeneralRouterCompiler:1.0.3'
     annotationProcessor 'com.github.Lvluffy:GeneralRouterCompiler:1.0.3'
-    /**组件*/
-    compile project(':schoolmodule')
-    compile project(':studentmodule')
 }

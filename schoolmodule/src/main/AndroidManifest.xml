@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolmodule">
+
+    <application>
+        <activity android:name=".SchoolActivity" />
+    </application>
+
+</manifest>
