@@ -23,8 +23,7 @@ public class Router {
      * @return
      */
     public static RouterInternal addRule(String scheme, Rule rule) {
-        RouterInternal router = RouterInternal.getInstance().addRule(scheme, rule);
-        return router;
+        return RouterInternal.getInstance().addRule(scheme, rule);
     }
 
     /**
