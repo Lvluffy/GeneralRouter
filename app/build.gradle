@@ -38,10 +38,10 @@ dependencies {
     /**support库*/
     implementation rootProject.supportDepends.values()
     /**路由*/
-    implementation 'com.github.Lvluffy:GeneralRouterApi:1.0.4'
-    implementation 'com.github.Lvluffy:GeneralRouterCompiler:1.0.3'
-    annotationProcessor 'com.github.Lvluffy:GeneralRouterCompiler:1.0.3'
+    implementation rootProject.generalRouter['routerCompiler']
+    annotationProcessor rootProject.generalRouter['routerCompiler']
     /**组件*/
-    implementation project(':schoolmodule')
-    implementation project(':studentmodule')
+    implementation project(path: ':routerapilib')
+    implementation project(path: ':schoolmodule')
+    implementation project(path: ':studentmodule')
 }

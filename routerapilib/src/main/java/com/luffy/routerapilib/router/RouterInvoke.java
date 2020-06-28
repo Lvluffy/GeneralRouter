@@ -9,6 +9,11 @@ import android.content.Intent;
  * @name 路由调用（供调用者使用，进行intent跳转）
  */
 public class RouterInvoke {
+
+    public static void invokeIntent(Context context, String routerTag) {
+        invokeIntent(context, routerTag, null);
+    }
+
     /**
      * 调用Activity-公共界面
      *
