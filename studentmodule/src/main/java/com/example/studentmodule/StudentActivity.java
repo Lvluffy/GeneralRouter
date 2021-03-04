@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.luffy.routerannotationlib.StaticRouter;
+import com.luffy.router.annotation.StaticRouter;
 import com.luffy.router.api.router.RouterInvoke;
 import com.luffy.router.api.rule.concreteRule.ActivityRule;
 

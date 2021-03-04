@@ -2,8 +2,8 @@ package com.luffy.generalrouterapi;
 
 import android.app.Application;
 
-import com.luffy.routerannotationlib.Components;
-import com.luffy.routercompilerlib.RouterHelper;
+import com.luffy.router.annotation.Components;
+import com.luffy.router.processor.RouterHelper;
 
 @Components({"school", "student"})
 public class BaseApplication extends Application {

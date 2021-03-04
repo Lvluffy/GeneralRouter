@@ -18,28 +18,5 @@
 #############################################
 
 # 注解
-#-keep @com.luffy.routerannotationcompilerlib.annotation.AutoRouter class * {*;}
-#-keep @com.luffy.routerannotationcompilerlib.annotation.Component class * {*;}
-#-keep @com.luffy.routerannotationcompilerlib.annotation.Components class * {*;}
-#-keep @com.luffy.routerannotationcompilerlib.annotation.StaticRouter class * {*;}
-#-keep class * {
-#    @com.luffy.routerannotationcompilerlib.annotation.AutoRouter <fields>;
-#    @com.luffy.routerannotationcompilerlib.annotation.Component <fields>;
-#    @com.luffy.routerannotationcompilerlib.annotation.Components <fields>;
-#    @com.luffy.routerannotationcompilerlib.annotation.StaticRouter <fields>;
-#}
-#-keepclassmembers class * {
-#    @com.luffy.routerannotationcompilerlib.annotation.AutoRouter <methods>;
-#    @com.luffy.routerannotationcompilerlib.annotation.Component <methods>;
-#    @com.luffy.routerannotationcompilerlib.annotation.Components <methods>;
-#    @com.luffy.routerannotationcompilerlib.annotation.StaticRouter <methods>;
-#}
-
--keep class com.luffy.routerapilib.** { *; }
--keepclassmembers class com.luffy.routerapilib.** { *; }
-
-#-keep class com.luffy.routercompilerlib.** { *; }
-#-keepclassmembers class com.luffy.routercompilerlib.** { *; }
-#
-#-keep class com.luffy.routerannotationlib.** { *; }
-#-keepclassmembers class com.luffy.routerannotationlib.** { *; }
+-keep class com.luffy.router.api.** { *; }
+-keepclassmembers class com.luffy.router.api.** { *; }

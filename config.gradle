@@ -12,7 +12,7 @@ ext {
     dependVersion = [
             supportConstraintLayout: "1.1.3",
             supportVersion         : "28.0.0",
-            router                 : "1.0.3"
+            router                 : "1.0.7"
     ]
 
     supportDepends = [
@@ -21,7 +21,7 @@ ext {
     ]
 
     generalRouter = [
-            api               : "com.github.Lvluffy:GeneralRouterCompiler:${dependVersion.router}",
-            annotationCompiler: "com.github.Lvluffy:GeneralRouterCompiler:${dependVersion.router}"
+            api               : "com.github.Lvluffy.GeneralRouter:routerapilib:${dependVersion.router}",
+            annotationCompiler: "com.github.Lvluffy.GeneralRouter:routerAnnotationCompilerLib:${dependVersion.router}"
     ]
 }
