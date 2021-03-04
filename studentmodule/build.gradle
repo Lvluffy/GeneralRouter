@@ -43,8 +43,8 @@ dependencies {
     /**support库*/
     implementation rootProject.supportDepends.values()
     /**路由*/
-    implementation rootProject.generalRouter['routerCompiler']
-    annotationProcessor rootProject.generalRouter['routerCompiler']
+    implementation rootProject.generalRouter.values()
+    annotationProcessor rootProject.generalRouter['annotationCompiler']
     /**组件*/
     implementation project(path: ':routerapilib')
 }

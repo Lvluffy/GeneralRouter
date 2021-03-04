@@ -1,1 +1,1 @@
-include ':app', ':routerapilib', ':schoolmodule', ':studentmodule'
+include ':app', ':routerapilib', ':routerAnnotationCompilerLib', ':schoolmodule', ':studentmodule'

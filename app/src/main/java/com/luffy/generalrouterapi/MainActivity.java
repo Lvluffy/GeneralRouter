@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.luffy.routerapilib.router.RouterInvoke;
-import com.luffy.routerapilib.rule.concreteRule.ActivityRule;
+import com.luffy.router.api.router.RouterInvoke;
+import com.luffy.router.api.rule.concreteRule.ActivityRule;
 
 public class MainActivity extends AppCompatActivity {
 

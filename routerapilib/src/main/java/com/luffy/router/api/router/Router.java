@@ -1,8 +1,8 @@
-package com.luffy.routerapilib.router;
+package com.luffy.router.api.router;
 
 import android.content.Context;
 
-import com.luffy.routerapilib.rule.abstractRule.Rule;
+import com.luffy.router.api.rule.abstractRule.Rule;
 
 /**
  * Created by lvlufei on 2019/1/9
@@ -10,8 +10,6 @@ import com.luffy.routerapilib.rule.abstractRule.Rule;
  * @desc 路由器
  * step 1. 调用Router.router方法-添加路由
  * step 2. 调用Router.invoke方法-根据pattern调用路由
- * <p>
- * 参考：https://github.com/qibin0506/Module2Module
  */
 public class Router {
 

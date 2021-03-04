@@ -1,9 +1,9 @@
-package com.luffy.routerapilib.rule.concreteRule;
+package com.luffy.router.api.rule.concreteRule;
 
 import android.content.BroadcastReceiver;
 
-import com.luffy.routerapilib.exception.ReceiverNotRouteException;
-import com.luffy.routerapilib.rule.abstractRule.BaseIntentRule;
+import com.luffy.router.api.exception.ReceiverNotRouteException;
+import com.luffy.router.api.rule.abstractRule.BaseIntentRule;
 
 /**
  * Created by lvlufei on 2019/1/9
