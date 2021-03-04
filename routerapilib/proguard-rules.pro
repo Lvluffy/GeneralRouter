@@ -18,5 +18,5 @@
 #############################################
 
 # 注解
--keep class com.luffy.router.api.** { *; }
--keepclassmembers class com.luffy.router.api.** { *; }
+-keep class com.luffy.router.** { *; }
+-keepclassmembers class com.luffy.router.** { *; }
