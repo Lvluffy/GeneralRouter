@@ -41,7 +41,6 @@ dependencies {
     implementation rootProject.generalRouter.values()
     annotationProcessor rootProject.generalRouter['annotationCompiler']
     /**组件*/
-    implementation project(path: ':routerapilib')
     implementation project(path: ':schoolmodule')
     implementation project(path: ':studentmodule')
 }

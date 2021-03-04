@@ -45,6 +45,4 @@ dependencies {
     /**路由*/
     implementation rootProject.generalRouter.values()
     annotationProcessor rootProject.generalRouter['annotationCompiler']
-    /**组件*/
-    implementation project(path: ':routerapilib')
 }
